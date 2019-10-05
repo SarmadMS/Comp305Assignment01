@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5.0f;
     //public float bulletspeed = 5.0f;
+    public AudioSource Laser;
 
     public float minY;
     public float maxY;
@@ -55,6 +56,7 @@ void Update()
         if (Input.GetButton("Fire1") && counter > fireRate)
         {
             // Create my laser object
+            Laser.Play();
             Instantiate(laser, laserSpawn.position, laser.transform.rotation);
             
            // laser.transform.position = Blaster.transform.position;

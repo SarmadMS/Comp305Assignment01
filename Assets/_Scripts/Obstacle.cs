@@ -2,21 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
- * Source file name:Enemy
- * Author’s name: Sarmad Siddiqi
- * Last Modified by: Sarmad Siddiqi
- * Date last Modified: October 4th
- * Program description: basic Enemy AI Script and handling Scoring and health
- * Revison History: 
- * added basic movement
- * Added Spawn Range
- * Added Scoring and Heatlh
- * 
- * 
- * 
- */
-public class Enemy : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     public float verticalSpeed;
     public float horizontalSpeed;
@@ -61,29 +47,23 @@ public class Enemy : MonoBehaviour
         }
         else if (transform.position.y <= -1.5)
         {
-            Reset();
+            verticalSpeed = -verticalSpeed;
         }
         else if (transform.position.y >= 2.1)
         {
-            Reset();
+            verticalSpeed = -verticalSpeed;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Bullet")
-        {
-            gameController.Score += 100;
-            Reset();
-        }
+    {      
 
         if (other.tag == "Player")
         {
             Hit.Play();
             gameController.Lives -= 1;
-            Reset();
         }
-        
+
 
     }
-    }
+}
