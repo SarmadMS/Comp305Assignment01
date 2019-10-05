@@ -197,6 +197,11 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 1994099683}
+    - target: {fileID: 6751461642639575462, guid: 7142dc590471f1a49a74b4ef4c962e43,
+        type: 3}
+      propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1994099685}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7142dc590471f1a49a74b4ef4c962e43, type: 3}
 --- !u!1 &175021162 stripped
@@ -217,7 +222,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9cec8117672281146b636d65de7e98c7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -768,6 +773,11 @@ PrefabInstance:
       propertyPath: maxX
       value: 0.07
       objectReference: {fileID: 0}
+    - target: {fileID: 6751461642639575462, guid: 7142dc590471f1a49a74b4ef4c962e43,
+        type: 3}
+      propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1994099685}
     - target: {fileID: 8828433051821922795, guid: 7142dc590471f1a49a74b4ef4c962e43,
         type: 3}
       propertyPath: m_Enabled
@@ -987,6 +997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: minY
       value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981382625817658364, guid: 1b40f30564b99e7489b79c8f579d58b6,
+        type: 3}
+      propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1994099685}
+    - target: {fileID: 6981382625817658364, guid: 1b40f30564b99e7489b79c8f579d58b6,
+        type: 3}
+      propertyPath: verticalSpeed
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b40f30564b99e7489b79c8f579d58b6, type: 3}
